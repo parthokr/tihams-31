@@ -30,7 +30,6 @@ function App() {
                 <Route path='ask' element={<Ask />} />
                 <Route path='user/:userId' element={<User />} />
                 <Route path='questions/:questionId' element={<Singleqs />}></Route>
-                <Route path='/*'  element={<Home/>}></Route>
               </Route>
             </Routes>
           </div>
