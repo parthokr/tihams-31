@@ -21,7 +21,7 @@ function App() {
       <BrowserRouter>
           <div className='contAppbody'>
             <Routes>
-              <Route path='/*' element={<SharedLayout />}>
+              <Route path='/' element={<SharedLayout />}>
                 {/* <Route index element={<Home />}/> */}
                 <Route index element={<Login />}></Route>
                 <Route path='login' element={<Login />}></Route>
@@ -30,6 +30,7 @@ function App() {
                 <Route path='ask' element={<Ask />} />
                 <Route path='user/:userId' element={<User />} />
                 <Route path='questions/:questionId' element={<Singleqs />}></Route>
+                <Route path='*' element={SharedLayout} />
               </Route>
             </Routes>
           </div>
