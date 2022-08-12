@@ -21,12 +21,12 @@ function App() {
       <BrowserRouter>
           <div className='contAppbody'>
             <Routes>
-              <Route path='/' element={<SharedLayout />}>
+              <Route path='https://coding-queries.netlify.app/' element={<SharedLayout />}>
                 {/* <Route index element={<Home />}/> */}
                 <Route index element={<Login />}></Route>
                 <Route path='login' element={<Login />}></Route>
                 <Route path='signup' element={<Signup />}></Route>
-                <Route path='/questions' element={<Questions />} />
+                <Route path='https://coding-queries.netlify.app/questions' element={<Questions />} />
                 <Route path='ask' element={<Ask />} />
                 <Route path='user/:userId' element={<User />} />
                 <Route path='questions/:questionId' element={<Singleqs />}></Route>
