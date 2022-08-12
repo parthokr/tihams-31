@@ -14,6 +14,7 @@ import User from './User';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { useState } from 'react';
+import NOT_FOUND from './NOT_FOUND';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
                 <Route path='ask' element={<Ask />} />
                 <Route path='user/:userId' element={<User />} />
                 <Route path='questions/:questionId' element={<Singleqs />}></Route>
+                <Route path='*' element={<NOT_FOUND />}></Route>
               </Route>
             </Routes>
           </div>
