@@ -46,7 +46,7 @@ function Singleqs() {
 
     // get the specific question from db
     //console.log(data, searchParams.get('aid')) // * data from state and 'aid' from url
-    console.log('ge ', questionId)
+    console.log('ge ')
 
     useEffect(() => {
         Axios.get(`https://tiham.herokuapp.com/questions/tagged/all/${questionId}/date`).then((res) => {
