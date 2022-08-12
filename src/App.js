@@ -31,7 +31,7 @@ function App() {
                 <Route path='user/:userId' element={<User />} />
                 <Route path='questions/:questionId' element={<Singleqs />}></Route>
               </Route>
-              <Route path='*'  element={<SharedLayout/>}></Route>
+              <Route path='*'  element={<Home/>}></Route>
             </Routes>
           </div>
       </BrowserRouter>
