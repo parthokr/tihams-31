@@ -88,7 +88,7 @@ function PagQsList(props) {
                     return(
                         <div style={{position:'relative'}} className='qlist' key={qs.q_id}>
                             <div className='ansidcont'>
-                                <img onClick={(e)=>hndlcpy(`http://localhost:3000/questions/${qs.q_id}`)} 
+                                <img onClick={(e)=>hndlcpy(`https://coding-queries.netlify.app/questions/${qs.q_id}`)} 
                                 src={copy} title='Copy link'/>
                             </div>
                             <div className='qitem'>

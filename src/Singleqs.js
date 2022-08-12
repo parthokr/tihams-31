@@ -99,7 +99,7 @@ function Singleqs() {
             <div className='qlist'>
                 <div className='ansidcont'>
                     {/* TODO[done] */}
-                    <img onClick={(e)=>hndlcpy(`http://localhost:3000/questions/${questionId}`)} 
+                    <img onClick={(e)=>hndlcpy(`https://coding-queries.netlify.app/questions/${questionId}`)} 
                     src={copy} title='Copy link'/>
                 </div>
 
@@ -464,7 +464,7 @@ function PagAsList({qid}) {
                                 currentItems?.length !== 0 && aid.toString() === (as.a_id).toString())?(
                                     inputElement
                                 ):(null)}>
-                                    <img id={as.a_id} onClick={(e)=>hndlcpy(`http://localhost:3000/questions/${qid}?aid=${as.a_id}`)} 
+                                    <img id={as.a_id} onClick={(e)=>hndlcpy(`https://coding-queries.netlify.app/questions/${qid}?aid=${as.a_id}`)} 
                                     src={copy} title='Copy link'/>
                                 </div>
 
